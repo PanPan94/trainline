@@ -12,6 +12,11 @@ function popular() {
             if(document.querySelectorAll('#results-list li').length < 5) {
                 document.querySelector('#results-list').appendChild(li)
             }
+            document.querySelectorAll('.location-list').forEach((e) => {
+                e.addEventListener('click', el => {
+                    activeElement.value = e.querySelector('a').innerText 
+                })
+            })
         })
     }).catch(err => console.error(err));
 }
