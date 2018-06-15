@@ -43,6 +43,11 @@ document.querySelectorAll('.form_input').forEach(e => {
                                 li.classList.add('location-list')
                                 a.innerText = el.local_name.split(',')[0]
                                 document.querySelector('#results-list').appendChild(li)
+                                document.querySelectorAll('.location-list').forEach((e) => {
+                                    e.addEventListener('click', el => {
+                                        activeElement.value = e.querySelector('a').innerText 
+                                    })
+                                })
                             })
                             
                         }, '')
