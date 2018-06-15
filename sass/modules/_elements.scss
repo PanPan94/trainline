@@ -1,0 +1,42 @@
+.button {
+    padding: 8px 20px;
+    background-color: $cyan;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0 8px;
+
+    &:hover {
+        background-color: darken($cyan, 5);
+    }
+}
+
+.location-list {
+    list-style-type: none;
+    display: block;
+    border: solid 1px #eee;
+    cursor: pointer;
+    color: #323E42;
+    padding: 10px 25px;
+    &:nth-child(1), &:nth-last-child(1) {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &:before {
+        content: url('https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg');
+        margin-right: 30px;
+    }
+    &:hover {
+        background-color: #eee;
+    }
+    
+}
+.results-list {
+    margin: 0;
+    padding: 0;
+}

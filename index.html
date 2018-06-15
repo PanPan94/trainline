@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Trainline</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-container__logo"></div>
+            <div class="header-container__nav-container">
+                <nav class="header-container__nav-items">
+                    <a href="#" class="button">Créer un compte</a>
+                    <a href="#" class="button">Se connecter</a>
+                </nav>
+                <a href="#" class="header-container__help">Aide</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="l-container">
+            <div class="main-caption">
+                <h3 class="main-caption__header">
+                    Réservez vos billets de trains et de bus.<br>
+                    En France et en Europe
+                </h3>
+                <h6 class="main-caption__footer">Voyagez avec Trainline, leader indépendant de la vente de billets de train et de bus en Europe</h6>
+            </div>
+            <div class="home__search-container">
+                <div class="home__form-container">
+                        <h3 class="home__form-container-title">
+                            Quel est votre trajet ?
+                        </h3>
+                    <form action="#">
+                        <div class="city_input">
+                            <i class="depart"></i>
+                            <input id="form_input_from" type="text" data-source="" class="form_input" placeholder="Saisissez votre gare de départ..">
+                        </div>
+                        <div class="city_input">
+                            <i class="finish"></i>
+                            <input id="form_input_to" type="text" data-source="" class="form_input" placeholder="Saisissez votre gare d'arrivée...">
+                        </div>
+                    </form>
+                <div class="button" id="search">Rechercher</div>
+                    
+                </div>
+                <div class="home__form-container">
+                    <div class="results">
+                        <ul id="results-list" class="results-list"></ul>
+                    </div>
+                    <div class="results2">
+                        <ul id="results-list" class="results-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

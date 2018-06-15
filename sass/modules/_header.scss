@@ -1,0 +1,30 @@
+.header-container {
+    width: 960px;
+    height: 60px;
+    margin: 0 auto;
+    
+    @include flex(space-between, center);
+
+    &__logo {
+        background: url('https://assets.trainline.eu/assets/images/trainline-logo-white-8f87ae08035d6750c1a5e836909ecd1a.svg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        width: 140px;
+        height: 33%;
+    }
+
+    &__nav-container {
+        @include flex(center, center);
+        height: 100%;
+    }
+
+    &__help {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        margin: 0 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 11px;
+    }
+}
