@@ -1,7 +1,16 @@
 # trainline
 Exercice
 
-Merci de lancer un coup de "npm install"
-Il faut par la suite installer grunt même si c'est necessaire.
+You can install this project by doing an  "npm install"
 
-Enfin vous pouvez lancer un coup de 'grunt dev' cela va vous lancer un serveur à l'aide de browser-sync.
+Requirements: 
+
+     Ruby, Sass, and Compass >=1.0.1 installed
+     npm installed
+     Grunt ~0.4.1
+     
+     
+Commands : 
+    npm install (install the project)
+    grunt dev (launch a browser-sync server to see the changes directly in your browser)
+     
